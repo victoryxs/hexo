@@ -1,0 +1,114 @@
+# Hexo Configuration
+## Docs: http://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Just a Blog But a Life
+subtitle: victoryxs' Blog
+description: 记录生活学习的点点滴滴
+author: victoryxs
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://yoursite.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 5
+pagination_dir: page
+
+# Extensions
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: next
+
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+- hexo-wordcount
+
+# Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+#duoshuo
+duoshuo_shortname: victoryxs
+
+#cemiantouxiang
+avatar: /images/avatar.jpg
+
+# Social links
+social:
+  Github: https://github.com/victoryxs
+  Twitter: https://twitter.com/victoryxs
+  Weibo: http://weibo.com/1628261543
+
+#swiftype
+swiftype_key: 7ov-yosz-q4oMCwX8bxz
+
+ # title, chinese available
+links_title: 友情链接
+# links
+links:
+  MacTalk: http://macshuo.com/
+  Mac玩儿法: http://www.waerfa.com/
+  nikola: http://nikola.gitcafe.io/
+
+#blog create time
+since: 2015
+
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:victoryxs/victoryxs.github.io.git
+  branch: master

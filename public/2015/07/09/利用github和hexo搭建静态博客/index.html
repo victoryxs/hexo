@@ -1,0 +1,751 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+  
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.3"/>
+
+
+    <meta name="description" content="记录生活学习的点点滴滴" />
+
+
+
+  <meta name="keywords" content="blog,hexo," />
+
+
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.3" />
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    analytics: {
+      google: ''
+    },
+    sidebar: 'post'
+  };
+</script>
+
+
+
+
+  <title> 利用github和hexo搭建静态博客 // Just a Blog But a Life </title>
+</head>
+
+<body>
+  <!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+  <div class="container one-column page-post-detail">
+    <div class="headband"></div>
+
+    <!-- add Fork me on Github -->
+<a href="https://github.com/victoryxs"><img style="position: absolute; top: 500; left: 0; border: 0;" src="https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"></a>
+
+    <!-- add Fork me on Github-->
+
+    <div id="header" class="header">
+      <div class="header-inner">
+        <h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">Just a Blog But a Life</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<div class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            <i class="menu-item-icon icon-categories"></i> <br />
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about">
+            <i class="menu-item-icon icon-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook">
+            <i class="menu-item-icon icon-guestbook"></i> <br />
+            留言
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+<form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '7ov-yosz-q4oMCwX8bxz','2.0.0');
+</script>
+
+<div class="site-search-toggle"></div>
+    </div>
+  
+</div>
+
+
+      </div>
+    </div>
+
+    <div id="main" class="main">
+      <div class="main-inner">
+        <div id="content" class="content">
+          
+
+  <div id="posts" class="posts-expand">
+    
+
+  <div class="post post-type-normal ">
+    <div class="post-header">
+
+      
+      
+        <h1 class="post-title">
+          
+          
+            
+              利用github和hexo搭建静态博客
+            
+          
+        </h1>
+      
+
+      
+      <div class="post-meta">
+        <span class="post-time">
+          发表于 2015-07-09
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; 分类于
+            
+              <a href="/categories/hexo/">hexo</a>
+
+              
+              
+
+            
+          </span>
+        
+
+      <span class="post-count">
+      &nbsp; | &nbsp;字数7,627
+      </span>
+
+      <span id="busuanzi_container_page_pv">
+      &nbsp; | &nbsp; 热度<span id="busuanzi_value_page_pv"></span>°C
+      </span>
+
+        
+          
+            <span class="post-comments-count">
+            &nbsp; | &nbsp;
+            <a href="/2015/07/09/利用github和hexo搭建静态博客/#comments" >
+              <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/09/利用github和hexo搭建静态博客/"></span>
+            </a>
+          </span>
+          
+        
+      </div>
+      
+
+    </div>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <h1 id="安装过程参考">安装过程参考</h1><blockquote>
+<ul>
+<li><a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a></li>
+<li><a href="https://hexo.io/" target="_blank" rel="external">Hexo官网</a></li>
+<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Hexo Next主题</a></li>
+<li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-duoshuo/" target="_blank" rel="external">动动手指，给你的Hexo站点添加最近访客（多说篇）</a></li>
+<li><a href="http://twiceyuan.com/2014/05/25/hexo%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0readmore%E6%A0%87%E8%AE%B0/" target="_blank" rel="external">Hexo自动添加ReadMore标记</a></li>
+</ul>
+</blockquote>
+<h1 id="部署到github">部署到github</h1><p>hexo d 报错 <code>ERROR deployer not found:github</code></p>
+<p>错误原因：未安装hexo的git插件</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+<p>站点_config.yml配置 <code>Note:每一个键值对中间有空格</code></p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">	<span class="attribute">type</span>: git</span><br><span class="line">	<span class="attribute">reposity</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:victoryxs/victoryxs.github.io.git</span><br><span class="line">	<span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<h1 id="Next主题">Next主题</h1><h2 id="站点_config-yml">站点_config.yml</h2><p>主要添加了<code>feed</code> <code>sitemap</code> <code>wordcount</code>插件，设置了sidebar的<code>avatar</code> <code>friend_link</code> <code>social_link</code>以及配置了<code>多说评论</code>，</p>
+<blockquote>
+<p>参考：</p>
+<ul>
+<li><a href="https://github.com/iissnan/hexo-theme-next/wiki" target="_blank" rel="external">Next wiki</a></li>
+</ul>
+</blockquote>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//hexo.io/docs/configuration.html</span></span><br><span class="line">## <span class="string">Source:</span> <span class="string">https:</span><span class="comment">//github.com/hexojs/hexo/</span></span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line"><span class="string">title:</span> Just a Blog But a Life</span><br><span class="line"><span class="string">subtitle:</span> Victoryxs  Blog </span><br><span class="line"><span class="string">description:</span> 记录生活学习的点点滴滴</span><br><span class="line"><span class="string">author:</span> Victoryxs</span><br><span class="line"><span class="string">language:</span> zh-Hans</span><br><span class="line"><span class="string">email:</span> victoryxs<span class="annotation">@qq</span>.com</span><br><span class="line"><span class="string">timezone:</span> </span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put <span class="keyword">in</span> a subdirectory, set url <span class="keyword">as</span> <span class="string">'http://yoursite.com/child'</span> and root <span class="keyword">as</span> <span class="string">'/child/'</span></span><br><span class="line"><span class="string">url:</span> <span class="string">http:</span><span class="comment">//yoursite.com</span></span><br><span class="line"><span class="string">root:</span> /</span><br><span class="line"><span class="string">permalink:</span> :year<span class="regexp">/:month/</span>:day<span class="regexp">/:title/</span></span><br><span class="line"><span class="string">permalink_defaults:</span></span><br><span class="line"></span><br><span class="line"># Directory</span><br><span class="line"><span class="string">source_dir:</span> source</span><br><span class="line"><span class="string">public_dir:</span> <span class="keyword">public</span></span><br><span class="line"><span class="string">tag_dir:</span> tags</span><br><span class="line"><span class="string">archive_dir:</span> archives</span><br><span class="line"><span class="string">category_dir:</span> categories</span><br><span class="line"><span class="string">code_dir:</span> downloads/code</span><br><span class="line"><span class="string">i18n_dir:</span> :lang</span><br><span class="line"><span class="string">skip_render:</span></span><br><span class="line"></span><br><span class="line"># Writing</span><br><span class="line"><span class="string">new_post_name:</span> :title.md # File name of <span class="keyword">new</span> posts</span><br><span class="line"><span class="string">default_layout:</span> post</span><br><span class="line"><span class="string">titlecase:</span> <span class="literal">false</span> # Transform title into titlecase</span><br><span class="line"><span class="string">external_link:</span> <span class="literal">true</span> # Open external links <span class="keyword">in</span> <span class="keyword">new</span> tab</span><br><span class="line"><span class="string">filename_case:</span> <span class="number">0</span></span><br><span class="line"><span class="string">render_drafts:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">post_asset_folder:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">relative_link:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">future:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">highlight:</span></span><br><span class="line"><span class="label">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  auto_detect:</span> <span class="literal">true</span></span><br><span class="line"><span class="label">  tab_replace:</span></span><br><span class="line"></span><br><span class="line"># Category &amp; Tag</span><br><span class="line"><span class="string">default_category:</span> uncategorized</span><br><span class="line"><span class="string">category_map:</span></span><br><span class="line"><span class="string">tag_map:</span></span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format <span class="keyword">as</span> defined <span class="keyword">in</span></span><br><span class="line">## <span class="string">http:</span><span class="comment">//momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="string">date_format:</span> YYYY-MM-DD</span><br><span class="line"><span class="string">time_format:</span> <span class="string">HH:</span><span class="string">mm:</span>ss</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to <span class="number">0</span> to disable pagination</span><br><span class="line"><span class="string">per_page:</span> <span class="number">5</span></span><br><span class="line"><span class="string">pagination_dir:</span> page</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## <span class="string">Plugins:</span> <span class="string">http:</span><span class="comment">//hexo.io/plugins/</span></span><br><span class="line">## <span class="string">Themes:</span> <span class="string">http:</span><span class="comment">//hexo.io/themes/</span></span><br><span class="line"><span class="string">theme:</span> next</span><br><span class="line"><span class="string">Plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line">- hexo-wordcount</span><br><span class="line"></span><br><span class="line"># Feed Atom</span><br><span class="line"><span class="string">feed:</span></span><br><span class="line"><span class="label">  type:</span> atom</span><br><span class="line"><span class="label">  path:</span> atom.xml</span><br><span class="line"><span class="label">  limit:</span> <span class="number">20</span></span><br><span class="line"></span><br><span class="line">#sitemap</span><br><span class="line"><span class="string">sitemap:</span></span><br><span class="line"><span class="label">  path:</span> sitemap.xml</span><br><span class="line"></span><br><span class="line">#duoshuo</span><br><span class="line"><span class="string">duoshuo_shortname:</span> victoryxs</span><br><span class="line"></span><br><span class="line">#cemiantouxiang</span><br><span class="line"><span class="string">avatar:</span> <span class="regexp">/images/</span>avatar.jpg</span><br><span class="line"></span><br><span class="line"># Social links</span><br><span class="line"><span class="string">social:</span></span><br><span class="line"><span class="label">  Github:</span> <span class="string">https:</span><span class="comment">//github.com/victoryxs</span></span><br><span class="line"><span class="label">  Twitter:</span> <span class="string">https:</span><span class="comment">//twitter.com/victoryxs</span></span><br><span class="line"><span class="label">  Weibo:</span> <span class="string">http:</span><span class="comment">//weibo.com/1628261543</span></span><br><span class="line"></span><br><span class="line"> # title, chinese available</span><br><span class="line"><span class="string">links_title:</span> 友情链接</span><br><span class="line"># links</span><br><span class="line"><span class="string">links:</span></span><br><span class="line"><span class="label">  MacTalk:</span> <span class="string">http:</span><span class="comment">//macshuo.com/</span></span><br><span class="line">  Mac玩儿法: <span class="string">http:</span><span class="comment">//www.waerfa.com/</span></span><br><span class="line"><span class="label">  nikola:</span> <span class="string">http:</span><span class="comment">//nikola.gitcafe.io/</span></span><br><span class="line"></span><br><span class="line">#blog create time</span><br><span class="line"><span class="string">since:</span> <span class="number">2015</span></span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> git</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>victoryxs/victoryxs.github.io.git</span><br><span class="line"><span class="label">  branch:</span> master</span><br></pre></td></tr></table></figure>
+<h2 id="主题_config-yml">主题_config.yml</h2><p>添加了<code>guestbook</code> <code>categories</code> <code>about</code> <code>tags</code> <code>腾讯公益404</code>，修改了代码高亮显示模式，添加了mathjax的latex支持</p>
+<blockquote>
+<p>参考</p>
+<ul>
+<li><a href="https://github.com/iissnan/hexo-theme-next/wiki" target="_blank" rel="external">Next wiki</a></li>
+<li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-duoshuo/" target="_blank" rel="external">动动手指，给你的Hexo站点添加最近访客（多说篇）</a></li>
+</ul>
+</blockquote>
+<figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -&gt; "archives" )</span></span><br><span class="line">menu:</span><br><span class="line">  home: /</span><br><span class="line">  categories: /categories</span><br><span class="line">  about: /about</span><br><span class="line">  archives: /archives</span><br><span class="line">  tags: /tags</span><br><span class="line">  #commonweal: /<span class="number">404.</span>html</span><br><span class="line">  guestbook: /guestbook</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Place your favicon.ico to /source directory.</span></span><br><span class="line">favicon: /favicon.ico</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Set default keywords (Use a comma to separate)</span></span><br><span class="line">keywords: <span class="string">"Hexo,next"</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Set rss to false to disable feed link.</span></span><br><span class="line"><span class="preprocessor"># Leave rss as empty to use site's feed link.</span></span><br><span class="line"><span class="preprocessor"># Set rss to specific value if you have burned your feed already.</span></span><br><span class="line">rss: atom.xml</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Icon fonts</span></span><br><span class="line"><span class="preprocessor"># Place your font into next/source/fonts, specify directory-name and font-name here</span></span><br><span class="line"><span class="preprocessor"># Avialable: default | linecons | fifty-shades | feather</span></span><br><span class="line">icon_font: <span class="keyword">default</span></span><br><span class="line"><span class="preprocessor">#icon_font: fifty-shades</span></span><br><span class="line"><span class="preprocessor">#icon_font: feather</span></span><br><span class="line"><span class="preprocessor">#icon_font: linecons</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Code Highlight theme</span></span><br><span class="line"><span class="preprocessor"># Available value: normal | night | night eighties | night blue | night bright</span></span><br><span class="line"><span class="preprocessor"># https://github.com/chriskempson/tomorrow-theme</span></span><br><span class="line">highlight_theme: night eighties</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># MathJax Support</span></span><br><span class="line">mathjax: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Schemes</span></span><br><span class="line"><span class="preprocessor"># scheme: Mist</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Sidebar, available value:</span></span><br><span class="line"><span class="preprocessor">#  - post    expand on posts automatically. Default.</span></span><br><span class="line"><span class="preprocessor">#  - always  expand for all pages automatically</span></span><br><span class="line"><span class="preprocessor">#  - hide    expand only when click on the sidebar toggle icon.</span></span><br><span class="line"><span class="preprocessor">#sidebar: post</span></span><br><span class="line">sidebar: always</span><br><span class="line"><span class="preprocessor">#sidebar: hide</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Automatically scroll page to section which is under &lt;!-- more --&gt; mark.</span></span><br><span class="line">scroll_to_more: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Automatically add list number to toc.</span></span><br><span class="line">toc_list_number: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Use Lato font</span></span><br><span class="line"><span class="preprocessor"># Note: this option is avialable only when the language is not `zh-Hans`</span></span><br><span class="line">use_font_lato: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">## DO NOT EDIT THE FOLLOWING SETTINGS</span></span><br><span class="line"><span class="preprocessor">## UNLESS YOU KNOW WHAT YOU ARE DOING</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Use velocity to animate everything.</span></span><br><span class="line">use_motion: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Fancybox</span></span><br><span class="line">fancybox: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Static files</span></span><br><span class="line">vendors: vendors</span><br><span class="line">css: css</span><br><span class="line">js: js</span><br><span class="line">images: images</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Theme version</span></span><br><span class="line">version: <span class="number">0.4</span>.3</span><br></pre></td></tr></table></figure>
+<h1 id="插件">插件</h1><h2 id="wordcount插件">wordcount插件</h2><blockquote>
+<p><a href="http://blog.willin.wang/posts/2015/hexo-wordcount/" target="_blank" rel="external">Hexo文章计数插件WordCount</a></p>
+</blockquote>
+<p>安装</p>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --<span class="keyword">save</span> hexo-<span class="literal">wordcount</span></span><br></pre></td></tr></table></figure>
+<p>使用</p>
+<p>修改<code>victoryxs.github.io/themes/layout/_macro/post.swig</code>文件</p>
+<figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"post-meta"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-time"</span>&gt;</span></span><br><span class="line">        </span><span class="variable">&#123;&#123; __('post.posted') &#125;&#125;</span><span class="xml"> </span><span class="variable">&#123;&#123; <span class="function"><span class="keyword">date</span><span class="params">(post.date, config.date_format)</span></span> &#125;&#125;</span><span class="xml"></span><br><span class="line">      <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">      </span><span class="template_tag">&#123;% <span class="keyword">if</span> post.categories and post.categories.length %&#125;</span><span class="xml"></span><br><span class="line">        <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-category"</span>&gt;</span></span><br><span class="line">          &amp;nbsp; | &amp;nbsp; </span><span class="variable">&#123;&#123; __('post.in') &#125;&#125;</span><span class="xml"></span><br><span class="line">          </span><span class="template_tag">&#123;% <span class="keyword">for</span> cat in post.categories %&#125;</span><span class="xml"></span><br><span class="line">            <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; url_for(cat.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span></span><span class="variable">&#123;&#123; cat.name &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line">            </span><span class="template_tag">&#123;% <span class="keyword">set</span> cat_length = post.categories.length %&#125;</span><span class="xml"></span><br><span class="line">            </span><span class="template_tag">&#123;% <span class="keyword">if</span> cat_length &gt; 1 and loop.index !== cat_length %&#125;</span><span class="xml"></span><br><span class="line">              </span><span class="variable">&#123;&#123; __('symbol.comma') &#125;&#125;</span><span class="xml"></span><br><span class="line">            </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line"></span><br><span class="line">          </span><span class="template_tag">&#123;% <span class="keyword">endfor</span> %&#125;</span><span class="xml"></span><br><span class="line">        <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">      </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line"></span><br><span class="line">    ---代码添加处---</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_container_page_pv"</span>&gt;</span></span><br><span class="line">    &amp;nbsp; | &amp;nbsp; 热度<span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_value_page_pv"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>°C</span><br><span class="line">    <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">      </span><span class="template_tag">&#123;% <span class="keyword">if</span> post.comments %&#125;</span><span class="xml"></span><br><span class="line">        </span><span class="template_tag">&#123;% <span class="keyword">if</span> (config.duoshuo and config.duoshuo.shortname) or config.duoshuo_shortname %&#125;</span><span class="xml"></span><br><span class="line">          <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-comments-count"</span>&gt;</span></span><br><span class="line">          &amp;nbsp; | &amp;nbsp;</span><br><span class="line">          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; url_for(post.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">#comments"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-comments-count ds-thread-count"</span> <span class="attribute">data-thread-key</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; post.path &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">        </span><span class="template_tag">&#123;% elseif config.disqus_shortname %&#125;</span><span class="xml"></span><br><span class="line">          <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-comments-count"</span>&gt;</span></span><br><span class="line">          &amp;nbsp; | &amp;nbsp;</span><br><span class="line">          <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; url_for(post.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">#comments"</span> &gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-comments-count disqus-comment-count"</span> <span class="attribute">data-disqus-identifier</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; post.path &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">        </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line">      </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>在上图代码添加处，添加代码</p>
+<figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-count"</span>&gt;</span></span><br><span class="line">&amp;nbsp; | &amp;nbsp;</span><span class="expression">&#123;&#123; __('<span class="variable">post.wordcount</span>') &#125;&#125;</span><span class="xml"></span><span class="expression">&#123;&#123; <span class="variable">wordcount</span>(<span class="variable">post.content</span>) &#125;&#125;</span><span class="xml"></span><br><span class="line"><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h2 id="添加fork_me_on_Github">添加fork me on Github</h2><p>在<code>victoryxs.github.io/themes/next/layout/_layout.swig</code></p>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><br><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">  </span><span class="template_tag">&#123;% <span class="keyword">include</span> '_partials/old-browsers.swig' %&#125;</span><span class="xml"></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"container one-column </span></span></span><span class="template_tag">&#123;% <span class="keyword">block</span> page_class %&#125;</span><span class="xml"><span class="tag"><span class="value"></span></span></span><span class="template_tag">&#123;% <span class="keyword">endblock</span> %&#125;</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"headband"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">---代码添加处---</span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"header"</span> <span class="attribute">class</span>=<span class="value">"header"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"header-inner"</span>&gt;</span></span><br><span class="line">        </span><span class="template_tag">&#123;% <span class="keyword">include</span> '_partials/header.swig' %&#125;</span><span class="xml"></span><br><span class="line">      <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>在上图代码添加处添加</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">&lt;!-- add Fork me on Github --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"https://github.com/victoryxs"</span>&gt;</span><span class="tag">&lt;<span class="title">img</span> <span class="attribute">style</span>=<span class="value">"position: absolute; top: 500; left: 0; border: 0;"</span> <span class="attribute">src</span>=<span class="value">"https://camo.githubusercontent.com/8b6b8ccc6da3aa5722903da7b58eb5ab1081adee/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6f72616e67655f6666373630302e706e67"</span> <span class="attribute">alt</span>=<span class="value">"Fork me on GitHub"</span> <span class="attribute">data-canonical-src</span>=<span class="value">"https://s3.amazonaws.com/github/ribbons/forkme_left_orange_ff7600.png"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- add Fork me on Github--&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="添加站点统计（不蒜子）">添加站点统计（不蒜子）</h2><p>在<code>victoryxs.github.io/themes/next/layout/_partials/footer.swig</code>中的末尾添加下面的js引用</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- busuanzi --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">async</span> <span class="attribute">src</span>=<span class="value">"https://dn-lbstatics.qbox.me/	busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="undefined"></span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- busuanzi --&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在footer模板中添加访问量,原谅哥偷懒，没有写单独的css</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"copyright"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_container_site_uv"</span>&gt;</span></span><br><span class="line">	 本站访客数<span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_value_site_uv"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>人次</span><br><span class="line"><span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="单篇文章阅读量">单篇文章阅读量</h2><p>由于不蒜子不提供首页单页面和站点统计，所以对index页面做部分修改</p>
+<figure class="highlight twig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"></span><span class="template_tag">&#123;% <span class="keyword">if</span> is_index %&#125;</span><span class="xml"></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"post-meta"</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-time"</span>&gt;</span></span><br><span class="line">         </span><span class="variable">&#123;&#123; __('post.posted') &#125;&#125;</span><span class="xml"> </span><span class="variable">&#123;&#123; <span class="function"><span class="keyword">date</span><span class="params">(post.date, 	config.date_format)</span></span> &#125;&#125;</span><span class="xml"></span><br><span class="line">       <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line">       </span><span class="template_tag">&#123;% <span class="keyword">if</span> post.categories and 	post.categories.length %&#125;</span><span class="xml"></span><br><span class="line">         <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-category"</span>&gt;</span></span><br><span class="line">           &amp;nbsp; | &amp;nbsp; </span><span class="variable">&#123;&#123; __('post.in') &#125;&#125;</span><span class="xml"></span><br><span class="line">           </span><span class="template_tag">&#123;% <span class="keyword">for</span> cat in post.categories %&#125;</span><span class="xml"></span><br><span class="line">  <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="variable">&#123;&#123; url_for(cat.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span></span><span class="variable">&#123;&#123; cat.name &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line">  </span><span class="template_tag">&#123;% <span class="keyword">set</span> cat_length = post.categories.length %&#125;</span><span class="xml"></span><br><span class="line">             </span><span class="template_tag">&#123;% <span class="keyword">if</span> cat_length &gt; 1 and loop.index !== cat_length %&#125;</span><span class="xml"></span><br><span class="line">               </span><span class="variable">&#123;&#123; __('symbol.comma') &#125;&#125;</span><span class="xml"></span><br><span class="line">             </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line"></span><br><span class="line">           </span><span class="template_tag">&#123;% <span class="keyword">endfor</span> %&#125;</span><span class="xml"></span><br><span class="line">         <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">       </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span><br><span class="line"></span><br><span class="line">     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"post-count"</span>&gt;</span></span><br><span class="line">     &amp;nbsp; | &amp;nbsp;</span><span class="variable">&#123;&#123; __('post.wordcount') &#125;&#125;</span><span class="xml"></span><span class="variable">&#123;&#123; wordcount(post.content) &#125;&#125;</span><span class="xml"></span><br><span class="line">     <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">     </span><span class="template_tag">&#123;% <span class="keyword">endif</span> %&#125;</span><span class="xml"></span></span><br></pre></td></tr></table></figure>
+<p>然后在非首页的post-meta中添加阅读量，有没有觉得热度这个名字起得特别接地气</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_container_page_pv"</span>&gt;</span></span><br><span class="line">&amp;nbsp; | &amp;nbsp; 热度<span class="tag">&lt;<span class="title">span</span> <span class="attribute">id</span>=<span class="value">"busuanzi_value_page_pv"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>°C<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="Hexo模板系统">Hexo模板系统</h1><p>Hexo的基本原理就是根据解析_post中的md格式文件，参照md文件中的布局类型根据模板解析。</p>
+<p>Hexo使用node.js模板文件，例如ejs，swig，doT，Jade。Hexo中有post、page、photo等不同布局，选用的布局类型会在md文件中声明。</p>
+<p>处理流程：Hexo首先解析md文件，然后根据layout.swig判断布局类型，再转发给其他的布局文件。</p>
+<p><img src="http://cl.ly/bvGa/hexo_ejs_1.png" alt="简要流程"></p>
+
+      
+    </div>
+
+    <div class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/blog/"> #blog </a>
+          
+            <a href="/tags/hexo/"> #hexo </a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/07/10/Mac软件推荐/">Mac软件推荐（一）</a>
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/09/FoldingText工具/">FoldingText工具</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </div>
+  </div>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+
+    
+      <div class="comments" id="comments">
+        
+          <div class="ds-thread" data-thread-key="2015/07/09/利用github和hexo搭建静态博客/"
+               data-title="利用github和hexo搭建静态博客" data-url="http://yoursite.com/2015/07/09/利用github和hexo搭建静态博客/">
+          </div>
+        
+      </div>
+    
+  </div>
+
+
+        </div>
+
+        
+      </div>
+
+
+      
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview">
+        <div class="site-author motion-element">
+          <img class="site-author-image" src="/images/avatar.jpg" alt="victoryxs" />
+          <p class="site-author-name">victoryxs</p>
+        </div>
+        <p class="site-description motion-element">记录生活学习的点点滴滴</p>
+        <div class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </div>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+              <a href="https://github.com/victoryxs" target="_blank">Github</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="https://twitter.com/victoryxs" target="_blank">Twitter</a>
+            </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://weibo.com/1628261543" target="_blank">Weibo</a>
+            </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+            <p class="site-author-name">友情链接</p>
+            
+              <span class="links-of-author-item">
+              <a href="http://macshuo.com/" target="_blank">MacTalk</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://www.waerfa.com/" target="_blank">Mac玩儿法</a>
+              </span>
+            
+              <span class="links-of-author-item">
+              <a href="http://nikola.gitcafe.io/" target="_blank">nikola</a>
+              </span>
+            
+          
+        </div>
+        
+      </div>
+
+      
+        <div class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装过程参考"><span class="nav-number">1.</span> <span class="nav-text">安装过程参考</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署到github"><span class="nav-number">2.</span> <span class="nav-text">部署到github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next主题"><span class="nav-number">3.</span> <span class="nav-text">Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#站点_config-yml"><span class="nav-number">3.1.</span> <span class="nav-text">站点_config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主题_config-yml"><span class="nav-number">3.2.</span> <span class="nav-text">主题_config.yml</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插件"><span class="nav-number">4.</span> <span class="nav-text">插件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#wordcount插件"><span class="nav-number">4.1.</span> <span class="nav-text">wordcount插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加fork_me_on_Github"><span class="nav-number">4.2.</span> <span class="nav-text">添加fork me on Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加站点统计（不蒜子）"><span class="nav-number">4.3.</span> <span class="nav-text">添加站点统计（不蒜子）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单篇文章阅读量"><span class="nav-number">4.4.</span> <span class="nav-text">单篇文章阅读量</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo模板系统"><span class="nav-number">5.</span> <span class="nav-text">Hexo模板系统</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </div>
+      
+
+    </div>
+  </div>
+
+
+    </div>
+
+    <div id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy; &nbsp; 
+  2015
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author">victoryxs</span>
+</div>
+
+<div class="copyright">
+ <span id="busuanzi_container_site_uv">
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function() {          
+          jQuery("#posts img").lazyload({
+            placeholder:"http://www.arao.me/loading.gif",
+              effect:"fadeIn",
+              threshold:200
+            });
+          });
+  </script>
+      </div>
+    </div>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.3"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.3"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.3" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+  
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.3" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var $sidebarInner = $('.sidebar-inner');
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.didShow', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      if (CONFIG.sidebar === 'always') {
+        displaySidebar();
+      }
+    });
+  </script>
+
+  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"victoryxs"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+
+
+  
+  
+
+</body>
+</html>
