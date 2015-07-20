@@ -14,7 +14,13 @@ function run() {
 		exit(1);
 	} else {
 		echo("======================Auto Backup Begin===========================");
-		cd('/Users/victory/Documents/victoryxs.github.io');    
+		cd('/Users/victory/Documents/victoryxs.github.io'); 
+		
+		if (exec('git pull origin master').code !== 0) {
+			echo('Error: Git add failed');
+			exit(1);
+
+		}
 		if (exec('git add --all').code !== 0) {
 			echo('Error: Git add failed');
 			exit(1);
@@ -25,6 +31,7 @@ function run() {
 			exit(1);
 
 		}
+
 		if (exec('git push origin master').code !== 0) {
 			echo('Error: Git push failed');
 			exit(1);
