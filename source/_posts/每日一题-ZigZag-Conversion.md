@@ -1,4 +1,4 @@
-title: 每日一题-ZigZag-Conversion
+title: 每日一题:ZigZag-Conversion
 date: 2015-07-24 15:28:30
 tags: [code,leetcode]
 categories: code
