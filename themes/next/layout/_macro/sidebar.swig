@@ -90,7 +90,6 @@
           {% endif %}
         </div>
         
-      </div>
 
       {% if is_post %}
         <div class="post-toc-wrap sidebar-panel-active">
