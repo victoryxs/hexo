@@ -2,7 +2,7 @@ title: 取代PPT的mdpress
 date: 2015-07-25 18:26:44
 tags: [tools, mdpress]
 categories: tools
-description: 最近发现一款神器impress.js，然后特别想将markdown和impress.js结合起来，结果就发现了这货**mdpress**。
+description: 最近发现一款神器impress.js，然后特别想将markdown和impress.js结合起来，结果就发现了这货mdpress。
 ---
 
 ## 缘起
