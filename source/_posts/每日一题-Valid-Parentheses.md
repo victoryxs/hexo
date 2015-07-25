@@ -113,16 +113,16 @@ public boolean isValid(String s) {
 
 + Java包装类
 
-| 基本类型 | 包装类 |
-|:-------|:-----:|
-|byte | Byte |
-|boolean | Boolean| 
-|short|Short|
-|char|Character|
-|int|Integer|
-|long|Long|
-|float|Float|
-|double|Double|
+    | 基本类型 | 包装类 |
+    |:-------|:-----:|
+    |byte | Byte |
+    |boolean | Boolean| 
+    |short|Short|
+    |char|Character|
+    |int|Integer|
+    |long|Long|
+    |float|Float|
+    |double|Double|
 
 
 
