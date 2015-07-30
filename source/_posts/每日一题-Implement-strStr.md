@@ -1,4 +1,4 @@
-title: '每日一题:Implement-strStr() '
+title: '每日一题:Implement-strStr()'
 date: 2015-07-29 22:52:30
 tags: [code,leetcode]
 categories: code
