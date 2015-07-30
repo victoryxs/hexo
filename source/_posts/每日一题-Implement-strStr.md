@@ -1,19 +1,17 @@
-title: 每日一题:Implement-strstr
-date: 2015-07-29 22:52:30
+title: '每日一题:Implement-strStr'
+date: 2015-07-30 17:41:58
 tags: [code, leetcode]
-categories: code
+categories: code
 description: 每天一道Leetcode
 ---
 
 ## 题目
-
 >Implement strStr().
 
 >Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 
 ## 解答
-
 
 ```
 public class Solution {
@@ -38,9 +36,11 @@ public class Solution {
         }
     }
 }
+
 ```
 
 ## 注解
 
-暴力匹配，没啥好说的，时间复杂度为 O(n*n)。明天会对KMP、BM等算法进行总结。
+暴力匹配，没啥好说的，时间复杂度为 O(n*n)。
+
 
