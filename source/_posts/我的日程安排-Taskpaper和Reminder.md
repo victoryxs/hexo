@@ -1,4 +1,4 @@
-title: 我的日程安排-Taskpaper 和Reminder
+title: 我的日程安排-Taskpaper和Reminder
 date: 2015-07-30 16:09:31
 tags: [tools,Taskpaper]
 categories: tools

@@ -1,17 +1,19 @@
-title: '每日一题:Implement-strStr()'
+title: 每日一题:Implement-strstr
 date: 2015-07-29 22:52:30
-tags: [code,leetcode]
+tags: [code, leetcode]
 categories: code
-description: 每天一道Leetcode，等待明天的字符串匹配算法集合。
+description: 每天一道Leetcode
 ---
 
 ## 题目
+
 >Implement strStr().
 
 >Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
 
 ## 解答
+
 
 ```
 public class Solution {
