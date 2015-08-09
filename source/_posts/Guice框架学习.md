@@ -1,7 +1,7 @@
 title: Guice框架学习
 date: 2015-08-09 09:01:17
-tags: [Framework,Guice]
-categories: Framework
+tags: [framework,Guice]
+categories: framework
 description: Guice框架的概述以及自己写的Demo。
 ---
 
