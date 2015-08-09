@@ -58,10 +58,5 @@ bacbababaabcbab
 
 > If a partial match of length partial_match_length is found and table[partial_match_length] > 1, we may skip ahead partial_match_length - table[partial_match_length - 1] characters.
 
-# KMP实现
 
-```
-
-
-```
     
