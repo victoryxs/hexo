@@ -59,4 +59,63 @@ bacbababaabcbab
 > If a partial match of length partial_match_length is found and table[partial_match_length] > 1, we may skip ahead partial_match_length - table[partial_match_length - 1] characters.
 
 
+## Java实现
+
+```
+ private int[] partialMatchTable(String needle){
+        int[]  partialMatchTable = new int[needle.length()];
+
+        for(int i = 0; i < needle.length(); i++){
+            String substring = needle.substring(0,i + 1);
+            int length = substring.length() - 1;
+            while(length > 0) {
+                if(!substring.substring(0,substring.length() - 1).contains(String.valueOf(substring.charAt(substring.length() - 1)))){
+                //当匹配串的前length-1的子串中不包含length位字符直接不匹配
+                    break;
+                }
+                String properPrefix = substring.substring(0, length);
+                String properSuffix = substring.substring(substring.length() - length, substring.length());
+                if (properPrefix.equals(properSuffix)) {
+                    partialMatchTable[i] = length;
+                    break;
+                }
+                length--;
+            }
+        }
+
+        return partialMatchTable;
+    }
+
+    public int kmp(String haystack, String needle){
+
+        int[] partialMatchTable = this.partialMatchTable(needle);
+        int haystackindex = 0;
+        int needleindex = 0;
+
+        while(haystackindex < haystack.length() && needleindex < needle.length()){
+            if(haystack.charAt(haystackindex) == needle.charAt(needleindex)){
+                haystackindex++;
+                needleindex++;
+            }else{
+                if(needleindex > 0 && partialMatchTable[needleindex] != 0){
+                    haystackindex = haystackindex - partialMatchTable[needleindex] + 1;
+                }else{
+                    haystackindex = haystackindex - needleindex + 1;
+                }
+                needleindex = 0;
+
+            }
+        }
+        if(needleindex > needle.length() - 1) {
+            return haystackindex - needle.length();
+        }
+        else{
+            return -1;
+        }
+
+    }
+```
+
+
+
     
