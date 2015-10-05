@@ -1,7 +1,7 @@
 title: Hadoop安装与配置
 date: 2015-10-04 22:37:50
-tags: ［Hadoop,Work］
-categories: Work
+tags:  [work,Hadoop]
+categories: work
 description: Hadoop安装与配置
 ---
 
